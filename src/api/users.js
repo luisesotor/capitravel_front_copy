@@ -8,7 +8,7 @@ export const createUser = async (user) => {
 export const getUsers = async () => {
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:8080/users", {
+    const response = await fetch("http://capitravelbackcopy-production.up.railway.app", {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
